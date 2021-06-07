@@ -26,5 +26,14 @@ cpfDV digits mults =
     in if expr < 2 then 0 else 11-expr
 
 
--- 4)
+-- 4) tabela verdade para o operador AND lógico
+andTable :: [(Bool, Bool, Bool)]
+andTable =
+  let lTuplas = [(x,y) | x <- [True,False], y <- [True,False]]
+      lTerm1 = map (\(x,y) -> x) lTuplas
+      lTerm2 = map (\(x,y) -> y) lTuplas
+      lTerm3 = zipWith (&&) lTerm1 lTerm2
+    in zip3 lTerm1 lTerm2 lTerm3
+
+
 
