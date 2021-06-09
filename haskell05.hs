@@ -1,4 +1,4 @@
--- Prática 04 de Haskell
+-- Prática 05 de Haskell
 -- Nome: Álisson Braga Canabarro
 
 -- 1)  Índice de Massa Corporal
